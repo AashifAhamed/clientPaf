@@ -4,6 +4,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="feedback.js"></script>
+          <script src="feedback.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Client PAF</title>
 </head>
@@ -26,7 +27,7 @@
     <br/>
     <br/>
     <h2>Add Feedback</h2>
-    <button onclick=" addFeedBack()">Add Feedback </button>
+    <button class="btn btn-primary" onclick=" addFeedBack()">Add Feedback </button>
     <input type="text" class="form-control" id="newId"></input>
     <input type="text" class="form-control" id="newTitle"></input>
     <input type="text" class="form-control" id="newPrice"></input>
@@ -39,8 +40,8 @@
     <br/>
     <br/>
     <h2>Remove Feedback</h2>
-    <button onclick="removeBook()">Remove Feedback </button>
-    <input type="text" id="deleteId"></input>
+    <button class="btn btn-primary" onclick="removefeedback()">Remove Feedback </button>
+    <input class="form-control"  type="text" id="deleteId"></input>
     <div id="deleteResult"></div>    
 
 </div>
