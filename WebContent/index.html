@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="feedback.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Client PAF</title>
+</head>
+<body>
+<div class="container">
+ <h2>Feedback Client</h2>
+	<div class="form-group">
+	 	Feedback Id : <br/>
+		<input type="text" class="form-control" id="id" /> 
+		<button class="btn btn-primary" onclick="getDetails()">Details </button>
+		<p class="bg-primary" />
+	        <div id="title"></div>
+		<p class="bg-primary" />
+        <div id="description"></div>
+      </div>
+        
+    <br/>    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2>Add Feedback</h2>
+    <button onclick=" addFeedBack()">Add Feedback </button>
+    <input type="text" class="form-control" id="newId"></input>
+    <input type="text" class="form-control" id="newTitle"></input>
+    <input type="text" class="form-control" id="newPrice"></input>
+    <div id="addResult"></div>    
+    
+    
+    <br/>    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2>Remove Book</h2>
+    <button onclick="removeBook()">Remove Book </button>
+    <input type="text" id="deleteId"></input>
+    <div id="deleteResult"></div>    
+
+</div>
+</body>
+</html>
